@@ -2,7 +2,7 @@ import { Socket } from "socket.io";
 
 const { Server } = require('socket.io');
 
-const io = new Server(8000, {
+const io = new Server(process.env.PORT || 8000, {
     cors: true
 });
 
